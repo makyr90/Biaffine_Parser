@@ -218,7 +218,7 @@ def contract(Arcs,cycle,Cycle_arcs):
 		try:
 			del contracted_Arcs[key]
 		except  KeyError:
-					continue
+			continue
 
 	for key in insert_keys:
 		contracted_Arcs[(key[0],key[1])] = key[2]
